@@ -1,0 +1,39 @@
+{
+  "name": "rsa-id-parser",
+  "version": "1.0.0",
+  "description": "Parse and validate South African ID numbers: date of birth, age, gender, citizenship, and checksum.",
+  "type": "module",
+  "main": "./src/parser.cjs",
+  "module": "./src/parser.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./src/parser.mjs",
+      "require": "./src/parser.cjs"
+    }
+  },
+  "files": [
+    "src",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "south-africa",
+    "sa-id",
+    "id-number",
+    "rsa",
+    "validation",
+    "parser",
+    "luhn"
+  ],
+  "author": "jt-sliqe <jt.sliqe@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.16"
+  }
+}
